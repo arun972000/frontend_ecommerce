@@ -1,0 +1,31 @@
+.shine-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shine-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%; /* Adjust as needed based on your preference */
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7), transparent);
+    animation: shine 1.5s infinite linear;
+  }
+  
+  @keyframes shine {
+    to {
+      left: 125%; /* Adjust as needed based on your preference */
+    }
+  }
+
+  .top-right-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 251, 5); /* Adjust the color as needed */
+  }
